@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <title>안 내면 진다 가위바위보</title>
+
+</head>
+
+<body>
+    <div id="my-cards">
+        <h1 id="scoreboard">Score</h1>
+
+        <h3 id="up"> 0 </h3>    
+        <h3 id="cp"> 0 </h3>
+
+        <button id="b" onclick="resetGame()"> reset </button>
+
+        <h4> Me </h4>
+        <img src="./images/rock.png" width="100" onclick="playGame('rock')" />
+        <img src="./images/scissors.png" width="100" onclick="playGame('scissors')" />
+        <img src="./images/paper.png" width="100" onclick="playGame('paper')" />
+    </div>
+    <div id="result-card">
+        <h4> Computer </h4>
+        <img id="robot" src="./images/placeholder.png" width="100" />
+    </div>
+    <h4 id="result"> Result </h4>
+    <script src="script.js"></script>
+</body>
+
+</html>
